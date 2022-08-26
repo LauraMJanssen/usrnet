@@ -70,8 +70,8 @@
     , "G_regularizer_orthstep": null
     , "G_regularizer_clipstep": null
 
-    , "checkpoint_test": 34000
-    , "checkpoint_save": 34000
+    , "checkpoint_test": 3374
+    , "checkpoint_save": 3374
     , "checkpoint_print": 1000
   }
 }
