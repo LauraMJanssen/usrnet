@@ -94,7 +94,7 @@ def main():
     noise_level_img = 0       # fixed: 0, noise level for LR image
     noise_level_model = noise_level_img  # fixed, noise level of model, default 0
     result_name = testset_name + '_' + model_name
-    model_path = os.path.join(model_pool, model_name+'.pth')
+    model_path = "/content/161940_G.pth"
 
     # ----------------------------------------
     # L_path = H_path, E_path, logger

@@ -18,6 +18,8 @@ from utils.utils_dist import get_dist_info, init_dist
 from data.select_dataset import define_Dataset
 from models.select_model import define_Model
 
+from skimage.metrics import structural_similarity as ssim
+
 
 '''
 # --------------------------------------------
@@ -237,8 +239,9 @@ def main(json_path='options/train_msrresnet_psnr.json'):
                     # calculate PSNR
                     # -----------------------
                     current_psnr = util.calculate_psnr(E_img, H_img, border=border)
+                    calc_ssim = ssim(E_img, H_img, multichannel =True)
 
-                    logger.info('{:->4d}--> {:>10s} | {:<4.2f}dB'.format(idx, image_name_ext, current_psnr))
+                    logger.info('{:->4d}--> {:>10s} | {:<4.2f}dB'.format(idx, image_name_ext, current_psnr, calc_ssim))
 
                     avg_psnr += current_psnr
 
