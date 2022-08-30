@@ -11,8 +11,8 @@
     "train": {
       "name": "train_dataset"
       , "dataset_type": "usrnet"
-      , "dataroot_H": "/content/gdrive/MyDrive/MA/IVUSImages_PNG_Train2"
-      , "dataroot_L": "/content/gdrive/MyDrive/MA/IVUS_LowRes_Scale4_Train"
+      , "dataroot_H": "/content/drive/MyDrive/IVUSImages/HR_Train"
+      , "dataroot_L": "/content/drive/MyDrive/IVUSImages/LR_Scale4_Train"
       , "H_size": 192 // 128 | 192
       , "use_flip": true
       , "use_rot": true
@@ -24,8 +24,8 @@
     , "test": {
       "name": "test_dataset"
       , "dataset_type": "usrnet"
-      , "dataroot_H": "/content/gdrive/MyDrive/MA/IVUSImages_PNG_Valid2"
-      , "dataroot_L": "/content/gdrive/MyDrive/MA/IVUS_LowRes_Scale4_Valid"
+      , "dataroot_H": "/content/drive/MyDrive/IVUSImages/HR_Valid"
+      , "dataroot_L": "/content/drive/MyDrive/IVUSImages/LR_Scale4_Valid"
     }
   }
 
